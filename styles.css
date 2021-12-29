@@ -1,0 +1,208 @@
+:root {
+    --bodyColor: hsl(226, 43%, 10%);
+    --profileColor: #5843E4;
+    --exerciseColor: #4EC2AD;
+    --workColor: #EB8B6B;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bodyColor);
+}
+
+.main-card {
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 15%);
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.main-card-component {
+    background-color: hsl(246, 80%, 60%);
+    height: 320px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 1000;
+}
+
+.main-card-component>* {
+    margin-left: 10%;
+}
+
+.selection {
+    position: absolute;
+    bottom: 0;
+    background-color: hsl(235, 46%, 20%);
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10%;
+    justify-content: flex-end;
+}
+
+.selection>* {
+    color: hsl(236, 100%, 87%);
+    margin-left: 10%;
+}
+
+.profile-img {
+    height: 60px;
+    width: 60px;
+    margin-top: 15%;
+    border: white 3px solid;
+    border-radius: 50%;
+}
+
+.main-card-img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-display h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 55px;
+}
+
+.previous-display p {
+    color: hsl(236, 100%, 87%);
+    font-weight: 100;
+}
+
+.sub-card {
+    height: 215px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sub-card-header {
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    margin-top: 8%;
+    border-radius: 5%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-card-header img {
+    height: 5px;
+    width: 15;
+    margin-right: 10%;
+}
+
+.seperation-container {
+    border-radius: 5%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    bottom: 0;
+    background-color: hsl(235, 46%, 20%);
+    gap: 0.5rem;
+    height: 80%;
+}
+
+.seperation-container>* {
+    margin-left: 10%;
+}
+
+.user p {
+    font-size: 15px;
+    color: hsl(236, 100%, 87%);
+}
+
+.user h1 {
+    color: white;
+    font-weight: 100;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+
+/* ICON IMAGE */
+
+.icon-image {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 7%;
+    max-height: 25%;
+}
+
+.icon-image img {
+    margin-right: 5%;
+}
+
+#work .icon-image {
+    background-color: var(--workColor);
+    width: 100%;
+    height: 40%;
+}
+
+#play .icon-image {
+    background-color: hsl(195, 74%, 62%);
+    width: 100%;
+    height: 40%;
+}
+
+#study .icon-image {
+    background-color: hsl(348, 100%, 68%);
+    width: 100%;
+    height: 40%;
+}
+
+#exercise .icon-image {
+    background-color: hsl(145, 58%, 55%);
+    width: 100%;
+    height: 40%;
+}
+
+#social .icon-image {
+    background-color: hsl(264, 64%, 52%);
+    width: 100%;
+    height: 40%;
+}
+
+#selfcare .icon-image {
+    background-color: hsl(43, 84%, 65%);
+    width: 100%;
+    height: 40%;
+}
+
+
+/* UTILITY */
+
+.mb-10 {
+    margin-bottom: 10%;
+}
