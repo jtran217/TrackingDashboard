@@ -5,6 +5,7 @@
     --workColor: #EB8B6B;
 }
 
+a,
 p,
 h1,
 h2,
@@ -64,9 +65,18 @@ body {
     justify-content: flex-end;
 }
 
-.selection>* {
+.selection p {
     color: hsl(236, 100%, 87%);
     margin-left: 10%;
+}
+
+.selection p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.selection p.active {
+    color: white;
 }
 
 .profile-img {
@@ -148,6 +158,21 @@ body {
 
 .grid-row-span-2 {
     grid-row: span 2;
+}
+
+
+/* Selector Class */
+
+.daily {
+    display: block;
+}
+
+.weekly {
+    display: none;
+}
+
+.monthly {
+    display: none;
 }
 
 
