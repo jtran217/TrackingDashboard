@@ -121,6 +121,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .sub-card-header img {
@@ -138,8 +139,13 @@ body {
     height: 65%;
     bottom: 0;
     background-color: hsl(235, 46%, 20%);
-    gap: 0.5rem;
+    gap: 1rem;
     height: 80%;
+}
+
+.seperation-container:hover {
+    cursor: pointer;
+    background-color: hsl(235, 45%, 57%);
 }
 
 .seperation-container>* {
